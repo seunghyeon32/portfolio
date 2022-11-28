@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.about-container {
+  width: 100vw;
+  padding: 3rem 0;
+  height: calc(100vh - 6rem);
+
+  // sort
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  & h2 {
+    font-family: #{$font-LineBd};
+    font-size: 2.5vw;
+    padding-bottom: 2rem;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.3rem;
+
+  & h3 {
+    font-family: #{$font-LineBd};
+    font-size: 2vw;
+
+    &.sky {
+      color: $primary-color;
+      margin-right: 0.5rem;
+      border-bottom: 2px dashed $primary-color;
+    }
+  }
+}
+
+.content {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & + & {
+    margin-top: 3rem;
+  }
+}
+
+.content-text {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 0.5rem;
+
+  h1 {
+    width: 4vw;
+    text-align: center;
+    font-family: #{$font-esaBd};
+    font-size: 4vw;
+    color: $primary-color;
+  }
+
+  h2 {
+    font-family: #{$font-esaBd};
+    font-size: 3vw;
+    color: $primary-color;
+    padding-left: 1vw;
+    padding-bottom: 0;
+  }
+}
+
+.description {
+  width: 80%;
+  padding: 1rem;
+  min-height: 10vh;
+  background-color: $fourth-color;
+  border-radius: 1rem;
+}

@@ -1,0 +1,88 @@
+@import '../../styles/variables';
+
+.intro-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $fifth-color;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.intro {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: showBubble 1.5s forwards;
+
+  h2 {
+    font-size: 2.5vw;
+    font-family: #{$font-LineBd};
+    margin: 1rem 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 3vw;
+    }
+  }
+}
+
+.selfie {
+  z-index: 1;
+  width: 30vw;
+  animation: showBubble 1.5s forwards;
+  margin-bottom: 1rem;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 50vw;
+  }
+}
+
+.bubble-1 {
+  position: absolute;
+  bottom: -12vh;
+  right: -6vw;
+  height: 78vh;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: $primary-color;
+  opacity: 40%;
+  animation: showBubble 1.5s forwards;
+}
+
+.bubble-2 {
+  position: absolute;
+  top: -9vh;
+  left: -10vw;
+  height: 90vh;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  opacity: 40%;
+  animation: showBubble 1.5s forwards;
+}
+
+
+@keyframes showBubble {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

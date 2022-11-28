@@ -1,0 +1,37 @@
+
+@import '../../styles/mixins';
+
+.nav-container {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: calc(100vw - 1.4rem);
+  padding: 1rem 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  & h3 {
+    font-family: #{$font-LineBd} !important;
+    margin: 0;
+    opacity: 90%;
+    letter-spacing: 2px;
+  }
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8vw;
+}
+
+.tab {
+  & + & {
+    margin-left: 0.8rem;
+  }
+}
+
+
