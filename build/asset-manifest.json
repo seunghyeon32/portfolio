@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio/static/js/main.97841b8e.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/portfolio/static/css/main.46ef4873.css",
+    "main.js": "/portfolio/static/js/main.1cfd158d.js",
+    "static/media/LINESeedKR-Rg.woff": "/portfolio/static/media/LINESeedKR-Rg.1718222bc4236b749a20.woff",
+    "static/media/LINESeedKR-Bd.woff": "/portfolio/static/media/LINESeedKR-Bd.a3673fe0d36ee873ca12.woff",
+    "static/media/LINESeedKR-Th.woff": "/portfolio/static/media/LINESeedKR-Th.6c2d1bc0e5e469e8b772.woff",
+    "static/media/esamanru-Bold.woff": "/portfolio/static/media/esamanru-Bold.8de92a8a0aee07c787af.woff",
+    "static/media/esamanru-Light.woff": "/portfolio/static/media/esamanru-Light.db9b5646ec4a86c0cb66.woff",
+    "static/media/esamanru-Medium.woff": "/portfolio/static/media/esamanru-Medium.eea09e8e8152cd8b4ace.woff",
     "index.html": "/portfolio/index.html",
-    "main.073c9b0a.css.map": "/portfolio/static/css/main.073c9b0a.css.map",
-    "main.97841b8e.js.map": "/portfolio/static/js/main.97841b8e.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.46ef4873.css.map": "/portfolio/static/css/main.46ef4873.css.map",
+    "main.1cfd158d.js.map": "/portfolio/static/js/main.1cfd158d.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.97841b8e.js"
+    "static/css/main.46ef4873.css",
+    "static/js/main.1cfd158d.js"
   ]
 }
