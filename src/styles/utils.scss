@@ -3,3 +3,9 @@ $secondary-color: #84CDEE;
 $third-color: #B9E2F5;
 $fourth-color: #DCF0FA;
 $fifth-color: #EDF7FC;
+
+.nav-container {
+  width: calc(100% - 10px);
+  padding: 5px;
+  display: flex;
+}

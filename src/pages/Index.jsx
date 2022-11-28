@@ -1,6 +1,6 @@
 // Index Page
 const Index = () => {
-  return <>Main</>;
+  return <>Index</>;
 };
 
 export default Index;
