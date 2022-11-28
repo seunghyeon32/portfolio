@@ -1,0 +1,24 @@
+// Sass Mixins
+@import './variables';
+
+// font-face
+@mixin font-face($name,
+  $src,
+  $weight,
+  $style: normal) {
+  @font-face {
+    font-family: quote($name);
+    src: $src;
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@include font-face($font-LineBd, url(../../public/assets/fonts/LINESeedKR-Bd.woff), 700);
+@include font-face($font-LineRg, url(../../public/assets/fonts/LINESeedKR-Rg.woff), 400);
+@include font-face($font-LineTh, url(../../public/assets/fonts/LINESeedKR-Th.woff), 100);
+
+@include font-face($font-esaBd, url(../../public/assets/fonts/esamanru-Bold.woff), 700);
+@include font-face($font-esaMd, url(../../public/assets/fonts/esamanru-Medium.woff), 400);
+@include font-face($font-esaLi, url(../../public/assets/fonts/esamanru-Light.woff), 300);
+

@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.intro-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $fifth-color;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  overflow: hidden;
+}
+
+.intro {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: showBubble 1.5s forwards;
+
+  h2 {
+    font-size: 2.5vw;
+  }
+
+  h3 {
+    font-size: 2vw;
+    margin: 0;
+  }
+}
+
+.bubble-1 {
+  position: absolute;
+  bottom: -10vw;
+  right: -5vw;
+  width: 40vw;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: $primary-color;
+  opacity: 40%;
+  animation: showBubble 1.5s forwards;
+}
+
+.bubble-2 {
+  position: absolute;
+  top: -7vw;
+  left: -10vw;
+  width: 50vw;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  opacity: 40%;
+  animation: showBubble 1.5s forwards;
+}
+
+
+@keyframes showBubble {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

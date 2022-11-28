@@ -1,24 +1,6 @@
-@font-face {
-  font-family: 'LINESeedKR-Bd';
-  src: url(../public/assets/fonts/LINESeedKR-Bd.woff);
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'LINESeedKR-Rg';
-  src: url(../public/assets/fonts/LINESeedKR-Rg.woff);
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'LINESeedKR-Th';
-  src: url(../public/assets/fonts/LINESeedKR-Th.woff);
-  font-style: normal;
-  font-weight: 100;
-}
+@import './styles/variables';
 
 * {
-  font-family: 'LINESeedKR-Rg' !important;
+  font-family: #{$font-LineRg} !important;
+  color: #333333;
 }
