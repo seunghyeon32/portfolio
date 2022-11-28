@@ -2,6 +2,7 @@ import "./index.scss";
 import Intro from "../components/layout/Intro";
 import Nav from "../components/layout/Nav";
 import About from "../components/layout/About";
+import Skills from "../components/layout/Skills";
 
 // Index Page
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
       <Nav />
       <Intro />
       <About />
+      <Skills />
     </div>
   );
 };

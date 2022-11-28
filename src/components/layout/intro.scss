@@ -8,17 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  
-  overflow-x: hidden;
-  overflow-y: hidden;
 
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
+  position: relative;
+  overflow: hidden;
 }
 
 .intro {
@@ -31,29 +23,22 @@
 
   h2 {
     font-size: 2.5vw;
-  }
-
-  h3 {
-    font-size: 2vw;
-    margin: 0;
+    font-family: #{$font-LineBd};
+    margin: 1rem 0;
   }
 
   @media screen and (max-width: 768px) {
     h2 {
-      font-size: 2.8vw;
-    }
-  
-    h3 {
-      font-size: 2.5vw;
-      margin: 0;
+      font-size: 3vw;
     }
   }
 }
 
 .selfie {
   z-index: 1;
-  width: 35vw;
+  width: 30vw;
   animation: showBubble 1.5s forwards;
+  margin-bottom: 1rem;
 
   & img {
     width: 100%;

@@ -1,13 +1,13 @@
 @import './styles/variables';
 
 * {
-  font-family: #{$font-LineRg} !important;
+  font-family: #{$font-LineRg};
   color: #333333;
 }
 
 .app-container {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html,
@@ -94,7 +94,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
 }
 
