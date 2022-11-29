@@ -29,7 +29,9 @@ const Skills = () => {
           {images.front.map((item) => (
             <div className="skill">
               <img
-                src={process.env.PUBLIC_URL + `/assets/images/${item}.png`}
+                src={
+                  process.env.PUBLIC_URL + `/assets/images/skills/${item}.png`
+                }
                 alt={item}
               />
             </div>
@@ -41,7 +43,9 @@ const Skills = () => {
           {images.back.map((item) => (
             <div className="skill">
               <img
-                src={process.env.PUBLIC_URL + `/assets/images/${item}.png`}
+                src={
+                  process.env.PUBLIC_URL + `/assets/images/skills/${item}.png`
+                }
                 alt={item}
               />
             </div>
@@ -53,7 +57,9 @@ const Skills = () => {
           {images.version.map((item) => (
             <div className="skill">
               <img
-                src={process.env.PUBLIC_URL + `/assets/images/${item}.png`}
+                src={
+                  process.env.PUBLIC_URL + `/assets/images/skills/${item}.png`
+                }
                 alt={item}
               />
             </div>
@@ -65,7 +71,9 @@ const Skills = () => {
           {images.collaboration.map((item) => (
             <div className="skill">
               <img
-                src={process.env.PUBLIC_URL + `/assets/images/${item}.png`}
+                src={
+                  process.env.PUBLIC_URL + `/assets/images/skills/${item}.png`
+                }
                 alt={item}
               />
             </div>

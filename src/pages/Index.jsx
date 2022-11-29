@@ -3,6 +3,7 @@ import Intro from "../components/layout/Intro";
 import Nav from "../components/layout/Nav";
 import About from "../components/layout/About";
 import Skills from "../components/layout/Skills";
+import Project from "../components/layout/Project";
 
 // Index Page
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
       <Intro />
       <About />
       <Skills />
+      <Project />
     </div>
   );
 };
