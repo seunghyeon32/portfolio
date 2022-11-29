@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./Index.scss";
 import Intro from "../components/layout/Intro";
 import Nav from "../components/layout/Nav";
 import About from "../components/layout/About";
