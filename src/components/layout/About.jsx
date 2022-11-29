@@ -15,7 +15,7 @@ const About = () => {
           <h2>긍정</h2>
         </div>
         <pre className="description">
-          긍정적인 에너지로 주위를 행복하게 만드는 에너지를 가진 사람입니다.
+          긍정적인 에너지로 주위를 행복하게 하는 사람입니다.<br/>
         </pre>
       </div>
 
@@ -25,7 +25,7 @@ const About = () => {
           <h2>무한</h2>
         </div>
         <pre className="description">
-          무한한 가능성을 가진 사람입니다.
+          무한한 가능성으로 끊임없이 도전하는 사람입니다.
         </pre>
       </div>
 
