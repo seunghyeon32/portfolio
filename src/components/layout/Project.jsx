@@ -9,6 +9,7 @@ const Project = () => {
       date: "2022.10.11 ~ 2022.11.21",
       member: 6,
       gifcount: 7,
+      content: "",
     },
     {
       name: "chuanione",
@@ -25,6 +26,9 @@ const Project = () => {
       date: "2022.07.11 ~ 2022.08.19",
       member: 5,
       gifcount: 11,
+      content: `<span>혼자야?</span>는 랜덤 미팅 서비스와 게이미피케이션을
+                접목시켜 사용자들의 접근성을 높이고, 랜덤 대화 주체 추천, 유저
+                상호 평가 등의 유저 친화적 컨텐츠를 제공하는 스낵 서비스 입니다.`,
     },
   ];
 
@@ -45,23 +49,28 @@ const Project = () => {
                   let arr = [];
                   for (let i = 0; i <= project.gifcount; i++) {
                     arr.push(
-                      <div className="project-png">
-                        <img
-                          src={
-                            process.env.PUBLIC_URL +
-                            `/assets/images/${project.name}/${i}.gif`
-                          }
-                        />
-                      </div>
+                      <img
+                        className="project-png"
+                        src={
+                          process.env.PUBLIC_URL +
+                          `/assets/images/${project.name}/${i}.gif`
+                        }
+                        alt="gif"
+                      />
                     );
                   }
                   return arr;
                 })()}
               </div>
-              <div>ds</div>
             </div>
 
-            <div className="project-description">여기는 설명</div>
+            <div className="project-description">
+              <div
+                className="project-content"
+                dangerouslySetInnerHTML={{ __html: project.content }}
+              >
+              </div>
+            </div>
           </div>
         </div>
       ))}
