@@ -1,6 +1,7 @@
-import "./Project.scss";
+import "./ProjectList.scss";
+import Project from "./Project";
 
-const Project = () => {
+const ProjectList = ({ projectRef }) => {
   const projects = [
     {
       name: "pocket",
@@ -11,6 +12,7 @@ const Project = () => {
       gifcount: 7,
       content: `<span>Pocket:folio</span>는 Pocket과 Portfolio의 합성어로 자신의 포트폴리오를 <span>3D공간인 포켓에 전시</span>하고 공유하는 서비스입니다.<br/>
                 포켓에서 본인의 개성을 표현하고, 다른 유저들과 소통할 수 있습니다.<br/><br/>
+                
                 
                 <span>✨ 이런 역할을 했어요 ! </span><br/>
                 - <span>소셜 로그인 </span><br/>
@@ -26,6 +28,8 @@ const Project = () => {
                 &nbsp &nbsp + 파도타기를 위한 <span>API 연결</span> <br/>
                 - <span>Figma</span>를 활용한 웹 디자인<br/>
                 - <span>React, styled components</span>를 활용한 웹 퍼블리싱<br/>
+
+                <br/><span>🏆 SSAFY 자율프로젝트 우수상 (1등)</span>
                 `,
     },
     {
@@ -49,6 +53,8 @@ const Project = () => {
                 &nbsp &nbsp + 톡톡<span> CRD</span><br/>
                 - <span>Figma</span>를 활용한 웹 디자인<br/>
                 - <span>React, styled components</span>를 활용한 웹 퍼블리싱<br/>
+
+                <br/><span>🏆 SSAFY 특화프로젝트 우수상 (2등)</span>
                 `,
     },
     {
@@ -69,53 +75,20 @@ const Project = () => {
                 - 회원가입 <span>유효성 검사</span><br/>
                 - <span>Figma</span>를 활용한 웹 디자인<br/>
                 - <span>React, styled components</span>를 활용한 웹 퍼블리싱<br/>
+
+                <br/><span>🏆 SSAFY 공통프로젝트 우수상 (3등)</span>
                 `,
     },
   ];
 
   return (
-    <div className="project-container">
+    <div className="project-container" ref={projectRef}>
       <h2>Projects</h2>
-      {projects.map((project) => (
-        <div className="project-item">
-          <h1>{project.title}</h1>
-          {project.subtitle && <h2>{project.subtitle}</h2>}
-          <p>
-            {project.date} {`( ${project.member}인 프로젝트 )`}
-          </p>
-          <div className="project">
-            <div className="carousel-container">
-              <div className="carousel">
-                {(() => {
-                  let arr = [];
-                  for (let i = 0; i <= project.gifcount; i++) {
-                    arr.push(
-                      <img
-                        className="project-png"
-                        src={
-                          process.env.PUBLIC_URL +
-                          `/assets/images/${project.name}/${i}.gif`
-                        }
-                        alt="gif"
-                      />
-                    );
-                  }
-                  return arr;
-                })()}
-              </div>
-            </div>
-
-            <div className="project-description">
-              <div
-                className="project-content"
-                dangerouslySetInnerHTML={{ __html: project.content }}
-              ></div>
-            </div>
-          </div>
-        </div>
+      {projects.map((project, idx) => (
+        <Project project={project} key={idx} />
       ))}
     </div>
   );
 };
 
-export default Project;
+export default ProjectList;

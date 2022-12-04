@@ -1,5 +1,5 @@
 
-@import '../../styles/mixins';
+@import '../styles/mixins';
 
 .nav-container {
   z-index: 2;
@@ -13,11 +13,12 @@
   align-items: center;
   justify-content: space-around;
 
-  & h3 {
+  & h4 {
     font-family: #{$font-LineBd} !important;
     margin: 0;
     opacity: 90%;
     letter-spacing: 2px;
+    cursor: pointer;
   }
 }
 
@@ -25,12 +26,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8vw;
 }
 
 .tab {
+  letter-spacing: 1px;
+  cursor: pointer;
+
   & + & {
     margin-left: 0.8rem;
+  }
+
+  &:hover {
+    color: black;
+    font-weight: bold;
   }
 }
 

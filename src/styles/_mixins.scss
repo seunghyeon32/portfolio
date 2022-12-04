@@ -22,3 +22,12 @@
 @include font-face($font-esaMd, url(../../public/assets/fonts/esamanru-Medium.woff), 400);
 @include font-face($font-esaLi, url(../../public/assets/fonts/esamanru-Light.woff), 300);
 
+
+@mixin container {
+  width: 100vw;
+  padding: 4.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

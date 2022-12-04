@@ -1,0 +1,11 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.project-container {
+  @include container;
+
+  h2 {
+    font-family: #{$font-LineBd};
+    padding-bottom: 2rem;
+  }
+}

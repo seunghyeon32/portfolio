@@ -1,0 +1,30 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+
+.about-container {
+  @include container;
+  justify-content: center;
+  position: relative;
+
+  & h2 {
+    font-family: #{$font-LineBd};
+    padding-bottom: 2rem;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  // padding-bottom: 2.3rem;
+
+  & h3 {
+    font-family: #{$font-LineBd};
+
+    &.sky {
+      color: $primary-color;
+      margin-right: 0.5rem;
+      border-bottom: 2px dashed $primary-color;
+    }
+  }
+}
