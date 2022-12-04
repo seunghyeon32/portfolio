@@ -63,7 +63,7 @@ const ProjectList = ({ projectRef }) => {
       subtitle: "비대면 아바타 미팅 서비스",
       date: "2022.07.11 ~ 2022.08.19",
       member: 5,
-      gifcount: 11,
+      gifcount: 8,
       content: `<span>혼자야?</span>는 랜덤 미팅 서비스와 <span>게이미피케이션</span>을
                 접목시켜 사용자들의 접근성을 높이고, 랜덤 대화 주체 추천, 유저
                 상호 평가 등의 <span>유저 친화적</span> 컨텐츠를 제공하는 스낵 서비스 입니다.<br/><br/>
