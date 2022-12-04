@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.721e7229.css",
-    "main.js": "/portfolio/static/js/main.b61b2a09.js",
+    "main.css": "/portfolio/static/css/main.c26e1d80.css",
+    "main.js": "/portfolio/static/js/main.e84bf8a8.js",
     "static/media/LINESeedKR-Rg.woff": "/portfolio/static/media/LINESeedKR-Rg.1718222bc4236b749a20.woff",
     "static/media/LINESeedKR-Bd.woff": "/portfolio/static/media/LINESeedKR-Bd.a3673fe0d36ee873ca12.woff",
     "static/media/LINESeedKR-Th.woff": "/portfolio/static/media/LINESeedKR-Th.6c2d1bc0e5e469e8b772.woff",
@@ -9,11 +9,11 @@
     "static/media/esamanru-Light.woff": "/portfolio/static/media/esamanru-Light.db9b5646ec4a86c0cb66.woff",
     "static/media/esamanru-Medium.woff": "/portfolio/static/media/esamanru-Medium.eea09e8e8152cd8b4ace.woff",
     "index.html": "/portfolio/index.html",
-    "main.721e7229.css.map": "/portfolio/static/css/main.721e7229.css.map",
-    "main.b61b2a09.js.map": "/portfolio/static/js/main.b61b2a09.js.map"
+    "main.c26e1d80.css.map": "/portfolio/static/css/main.c26e1d80.css.map",
+    "main.e84bf8a8.js.map": "/portfolio/static/js/main.e84bf8a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.721e7229.css",
-    "static/js/main.b61b2a09.js"
+    "static/css/main.c26e1d80.css",
+    "static/js/main.e84bf8a8.js"
   ]
 }
