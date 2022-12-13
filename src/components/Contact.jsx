@@ -3,7 +3,7 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <div className="-box">
+      <div className="contact-box">
         <div className="contact">
           <img
             src={process.env.PUBLIC_URL + "/assets/images/email.png"}

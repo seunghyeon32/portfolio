@@ -4,7 +4,7 @@ import { useRef } from "react";
 // components
 import Intro from "../components/Intro";
 import Nav from "../components/Nav";
-// import About from "../components/About";
+import About from "../components/About";
 import Skills from "../components/Skills";
 import ProjectList from "../components/ProjectList";
 import Contact from "../components/Contact";
@@ -46,7 +46,7 @@ const Index = () => {
     <div className="container">
       <Nav scroll={scroll} />
       <Intro />
-      {/* <About /> */}
+      <About />
       <Skills skillRef={skillRef} />
       <ProjectList projectRef={projectRef} />
       <Contact />

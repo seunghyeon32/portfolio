@@ -6,17 +6,22 @@
   @include container;
   justify-content: center;
   position: relative;
+  text-align: center;
 
   & h2 {
     font-family: #{$font-LineBd};
     padding-bottom: 2rem;
+  }
+
+  pre {
+    line-height: 1.7;
   }
 }
 
 .title {
   display: flex;
   align-items: center;
-  // padding-bottom: 2.3rem;
+  padding-bottom: 2.3rem;
 
   & h3 {
     font-family: #{$font-LineBd};
