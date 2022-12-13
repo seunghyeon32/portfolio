@@ -1,15 +1,15 @@
 import "./About.scss";
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <div className="about-container">
+    <div className="about-container" ref={aboutRef}>
       <h2>ABOUT ME</h2>
       <div className="title">
         <h3 className="sky">현재를 즐기며 발전해가는</h3>
         <h3>개발자, 이승현</h3>
       </div>
       <pre>
-{`"현재를 즐기자" 는 제 인생의 슬로건입니다. 
+        {`"현재를 즐기자" 는 제 인생의 슬로건입니다. 
 현재를 즐기며 열심히 살다보면, 긍정적인 미래가 만들어진다고 생각하기 때문입니다.
 
 개발도 인생과 같다고 생각합니다.

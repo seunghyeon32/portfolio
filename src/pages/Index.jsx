@@ -12,6 +12,7 @@ import Contact from "../components/Contact";
 // Index Page
 const Index = () => {
   const skillRef = useRef();
+  const aboutRef = useRef();
   const projectRef = useRef();
 
   const scroll = (num) => {
@@ -19,6 +20,11 @@ const Index = () => {
       // 맨 위로
       window.scrollTo({
         top: 0,
+        behavior: "smooth",
+      });
+    } else if (num === 1) {
+      window.scrollTo({
+        top: aboutRef?.current?.offsetTop,
         behavior: "smooth",
       });
     } else if (num === 2) {
@@ -46,7 +52,7 @@ const Index = () => {
     <div className="container">
       <Nav scroll={scroll} />
       <Intro />
-      <About />
+      <About aboutRef={aboutRef} />
       <Skills skillRef={skillRef} />
       <ProjectList projectRef={projectRef} />
       <Contact />

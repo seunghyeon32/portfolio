@@ -3,7 +3,9 @@ import "./Nav.scss";
 const Tabs = ({ scroll }) => {
   return (
     <div className="tabs">
-      {/* <p className="tab">ABOUT</p> */}
+      <p className="tab" onClick={() => scroll(1)}>
+        ABOUT
+      </p>
       <p className="tab" onClick={() => scroll(2)}>
         SKILLS
       </p>
