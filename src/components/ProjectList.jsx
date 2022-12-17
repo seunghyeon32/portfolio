@@ -10,6 +10,7 @@ const ProjectList = ({ projectRef }) => {
       date: "2022.10.11 ~ 2022.11.21",
       member: 6,
       gifcount: 7,
+      link: "https://github.com/seunghyeon32/Pocket-folio",
       content: `<span>Pocket:folio</span>는 Pocket과 Portfolio의 합성어로 자신의 포트폴리오를 <span>3D공간인 포켓에 전시</span>하고 공유하는 서비스입니다.<br/>
                 포켓에서 본인의 개성을 표현하고, 다른 유저들과 소통할 수 있습니다.<br/><br/>
                 
@@ -39,6 +40,7 @@ const ProjectList = ({ projectRef }) => {
       date: "2022.08.22 ~ 2022.10.07",
       member: 6,
       gifcount: 8,
+      link: "https://github.com/seunghyeon32/ChuAniOne",
       content: `<span>츄애니원</span>은 유저들의 선호도를 기반으로 잠재요인의 값을 구하여
                 각각의 유저에게 애니메이션을 맞춤형으로 제공하는 <span>애니메이션 추천 서비스</span>이다.<br/><br/>
                 
@@ -64,6 +66,7 @@ const ProjectList = ({ projectRef }) => {
       date: "2022.07.11 ~ 2022.08.19",
       member: 5,
       gifcount: 8,
+      link: "https://github.com/seunghyeon32/Honjaya",
       content: `<span>혼자야?</span>는 랜덤 미팅 서비스와 <span>게이미피케이션</span>을
                 접목시켜 사용자들의 접근성을 높이고, 랜덤 대화 주체 추천, 유저
                 상호 평가 등의 <span>유저 친화적</span> 컨텐츠를 제공하는 스낵 서비스 입니다.<br/><br/>

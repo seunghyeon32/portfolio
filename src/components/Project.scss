@@ -12,6 +12,13 @@
   justify-content: center;
   border-radius: 0.5rem;
   font-family: #{$font-LineRg};
+  position: relative;
+
+  a {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 
   h2 {
     font-family: #{$font-LineBd};
@@ -34,6 +41,31 @@
   @media screen and (max-width: 768px) {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+.github {
+  width: 4rem;
+  height: 4rem;
+
+  &:hover {
+    transition: all 0.1s ease-out;
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  @media screen and (max-width: 425px) {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 

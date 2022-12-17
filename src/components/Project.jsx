@@ -25,6 +25,13 @@ const Project = ({ project }) => {
 
   return (
     <div className="project-item">
+      <a href={project.link} target="_blank">
+        <img
+          className="github"
+          src={process.env.PUBLIC_URL + "/assets/images/github.png"}
+          alt="github"
+        />
+      </a>
       <h2>{project.title}</h2>
       {project.subtitle && <h3>{project.subtitle}</h3>}
       <p>
